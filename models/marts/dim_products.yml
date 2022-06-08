@@ -1,0 +1,25 @@
+version: 2
+
+models:
+    - name: dim_products
+      description: The products dimension table from data warehouse
+      columns:
+        - name: sk
+          description: The surrogate key of the products table
+          tests:
+            - unique
+            - not_null
+        - name: id
+          description: The primary key of the products table
+          tests:
+            - unique
+            - not_null
+        - name: supplier
+        - name: name
+        - name: qty_unit
+        - name: price
+        - name: in_stock
+        - name: in_order
+        - name: rec_level
+        - name: is_discontinued
+        - name: category

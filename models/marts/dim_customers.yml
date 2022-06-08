@@ -1,0 +1,22 @@
+version: 2
+
+models:
+    - name: dim_customers
+      description: The customers dimension table from data warehouse
+      columns:
+        - name: sk
+          description: The surrogate key of the customers table
+          tests:
+            - unique
+            - not_null
+        - name: id
+          description: The primary key of the customers table
+          tests:
+            - unique
+            - not_null
+        - name: name
+        - name: address
+        - name: city
+        - name: region
+        - name: postal_code
+        - name: country

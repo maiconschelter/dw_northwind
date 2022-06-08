@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+    - name: northwind_dw
+      schema: northwind_dw
+      description: The Northwind ELT based on Postgres database data
+      tables:
+        - name: orders
+        - name: categories
+        - name: customer_demo
+        - name: customer_demographics
+        - name: customers
+        - name: employee_territories
+        - name: employees
+        - name: order_details
+        - name: products
+        - name: region
+        - name: report_northwind
+        - name: shippers
+        - name: suppliers
+        - name: territories
+        - name: us_states
