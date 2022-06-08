@@ -1,0 +1,25 @@
+version: 2
+
+models:
+    - name: dim_employees
+      description: The employees dimension table from data warehouse
+      columns:
+        - name: sk
+          description: The surrogate key of the employees table
+          tests:
+            - unique
+            - not_null
+        - name: id
+          description: The primary key of the employees table
+          tests:
+            - unique
+            - not_null
+        - name: last_name
+        - name: first_name
+        - name: birth_date
+        - name: hire_date
+        - name: address
+        - name: city
+        - name: region
+        - name: postal_code
+        - name: country
